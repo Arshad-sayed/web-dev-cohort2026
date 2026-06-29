@@ -11,3 +11,9 @@
 ![Alt Text](/blog-posts/assests/article%207%20cover.png)
 
 [👉 read on hashnode](https://arshadsayed.hashnode.dev/emmet-for-html-a-beginner-s-guide-to-writing-faster-markup)
+
+## 03.CSS Selectors 101: Targeting Elements with Precision
+
+![Alt Text](/blog-posts/assests/article7.png)
+[👉 read on hashnode](https://arshadsayed.hashnode.dev/css-selectors-101-targeting-elements-with-precision)
+
