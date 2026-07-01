@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    --color-background-main: #ffffff;
+    --color-text-main: #08090a;
+    --color-brand: #0c8c5e;
+}
+
+/* body {
+    min-height: 100vh;
+     font-family: "Inter", sans-serif;
+
+    background-color: var(--color-background-main);
+    color: var(--color-text-main);
+    background-image: url("/assets/Mintlify_idjZ0zw5qA_2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color-background-main);
+    inset: 0;
+
+    z-index: -1;
+
+} */
+
+body {
+    margin: 0;
+    min-height: 1000vh;
+    background: #fff;
+
+    color: var(--color-text-main);
+    font-family: "Inter", sans-serif;
+}
+
+.bgimage {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    inset: 0;
+
+    background: url("./assets/Mintlify_idjZ0zw5qA_2.jpeg") center top / cover no-repeat;
+
+    z-index: -2;
+}
+
+/* .bgimage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("./assets/Mintlify_idjZ0zw5qA_2.jpeg") center top / cover no-repeat;
+
+    z-index: -2;
+} */
+
+.bgimage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(255, 255, 255, 0.4) 60%,
+            #fff 100%);
+
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+
+
+
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+
+
+/* navsection starts here  */
+
+
+.parentnav {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    fill-opacity: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+
+}
+
+.logonav {
+    position: relative;
+    width: 300px;
+    height: auto;
+}
+
+.linksnav {
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.buttonsnav {
+    display: flex;
+    gap: 20px;
+}
+
+.Contact-Btn {
+    background-color: #fff;
+    padding: 4.5px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+
+}
+
+.start-Btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 4.5px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+
+/* navsection ends here  */
+
+
+/* herosection starts here  */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+    padding: 80px;
+}
+
+.hero-h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero-p {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 1px;
+    font-weight: 400;
+
+}
+
+.hero-input {
+    display: flex;
+    padding: 4px;
+    border-radius: 30px;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+}
+
+
+
+
+.input-conatiner-1 {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+
+}
+
+.input-conatiner-1::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+
+.start-now-btn-1 {
+    background-color: #fff;
+    padding: 4.5px 12px;
+    border-radius: 30px;
+
+}
+
+
+.hero-img-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.hero-img-1 img {
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.icons img {
+    width: 150px;
+    /* height: 13.48px; */
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 32px;
+    margin-top: 30px;
+}
+
+
+
+/* inteligence section starts here */
+.parent-intelligent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.h1part-text h1 {
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.h1part-text p {
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.vidoes-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+
+}
+
+.left-article,
+.right-article {
+    border: 0.5px solid #08090a;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: start;
+
+
+
+}
+
+.left-article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-p {
+    color: var(--color-brand);
+    font-weight: 500;
+    line-height: 150%;
+
+    font-size: 0.75rem;
+    font-family: "Geist Mono", monospace;
+
+    letter-spacing: 0.6px;
+
+    text-wrap: pretty;
+}
+
+.heading-h2-vidoes {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.inteligence-videos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.bigvideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
+    border: 0.5px solid #4f545a;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px;
+    width: 1000px;
+    text-align: center;
+    line-height: normal;
+}
+
+
+
+
+/* inteligence section ends  here */
+
+
+/* enterprises section starts  here */
+.top-heading-section {
+    background-color: #08090a08;
+    height: auto;
+    border: 0.5px solid #4f545a;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    gap: 10px;
+    line-height: normal;
+    margin-top: 50px;
+
+}
+
+
+
+.enterpices-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+
+
+}
+
+.enterpices-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.button button {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: medium;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+
+.content-enterprices {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+
+.left-content,
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+}
+
+.h2-inteligence {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* enterprises section ends  here */
+
+.bigimg {
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+}
+.bigimg img{
+    border-radius: 20px;
+}
