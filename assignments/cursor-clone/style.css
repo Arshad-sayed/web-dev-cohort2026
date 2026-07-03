@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "CursorGothic";
+    src: url("/assets/CursorGothic-Regular.woff2");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #14120b;
+    color: #edecec;
+    font-family: "CursorGothic";
+}
+
+/* nav section starts here  */
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0px;
+
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.nav-buttons .btn-1 {
+    background-color: #1b1913;
+    padding: 4px 12px;
+    color: #edecec;
+    border-radius: 14px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.nav-buttons .btn-2 {
+    background-color: #edecec;
+    padding: 6px 12px;
+    border-radius: 14px;
+
+}
+
+#menu-bars {
+    display: none;
+}
+
+
+/* nav section ends  here  */
+
+
+
+
+/* hero section starts  here  */
+
+.hero-conatainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 60px;
+
+}
+
+.content-section {
+    text-align: start;
+
+}
+
+.content-section h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.Download-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #ededec;
+    color: #14120b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+
+.vedio-section {
+    width: 100%;
+
+}
+
+.vedio-section video {
+    width: 100%;
+    max-width: 1268px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+
+/* hero section ends  here  */
+
+/* brands section starts here */
+
+.brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.brand-content-p {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+/* .brand-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+} */
+
+.brand-img {
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.brand-img img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+}
+
+
+/* brands section ends here */
+
+
+/* videos section starst here  */
+.vedio-section-details {
+    width: 100%;
+
+}
+
+.vedio-section-details video {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-top: 10px;
+
+     padding: 20px 16px;
+}
+
+/* videos section ends here  */
+
+/* testimonials section starts from here */
+.testimonials-h1{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonials {
+    max-width: 1300px;
+    margin: 120px auto;
+    padding: 0 16px;
+}
+
+.testimonials-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials-heading h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.testimonials-heading p {
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: #1b1913;
+    border: 1px solid #2a2720;
+    border-radius: 4px;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+}
+
+.quote {
+    color: #ededec;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.user span {
+    font-size: 13px;
+    color: #9b9b9b;
+}
+/* testimonials section ends from here */
+
+
+@media screen and (max-width: 640px) {
+
+    .nav-links,
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+
+    #menu-bars {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+
+
+    .content-section h1 {
+        font-size: 26px;
+        font-weight: 500;
+
+    }
+
+    .hero-conatainer {
+        padding: 60px 20px;
+        gap: 40px;
+
+    }
+
+    .content-section h1 {
+        font-size: 22px;
+        line-height: 1.2;
+
+    }
+
+    .Download-btn {
+        margin-top: 20px;
+    }
+
+    .brand-content-p {
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+
+    }
+
+    .brand-img {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .brand-img img {
+        max-width: 70px;
+
+    }
+
+
+
+
+
+     .testimonials {
+        margin: 80px auto;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 30px;
+    }
+
+    .testimonials-heading p {
+        font-size: 15px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 24px;
+    }
+
+
+    .testimonials-h1{
+        text-align: center;
+        font-size: 22px;
+    }
+
+
+
+}
